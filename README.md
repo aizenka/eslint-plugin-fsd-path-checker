@@ -1,4 +1,4 @@
-# eslint-plugin-fsd-path-checker
+# eslint-plugin-feature-sliced-design-path-checker
 
 ESLint plugin for imports in FSD architecture
 
@@ -10,10 +10,10 @@ You'll first need to install [ESLint](https://eslint.org/):
 npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-fsd-path-checker`:
+Next, install `eslint-plugin-feature-sliced-design-path-checker`:
 
 ```sh
-npm install eslint-plugin-fsd-path-checker --save-dev
+npm install eslint-plugin-feature-sliced-design-path-checker --save-dev
 ```
 
 ## Usage
@@ -39,20 +39,7 @@ Then configure the rules you want to use under the rules section.
 }
 ```
 
-
-
-## Configurations
-
-<!-- begin auto-generated configs list -->
-TODO: Run eslint-doc-generator to generate the configs list (or delete this section if no configs are offered).
-<!-- end auto-generated configs list -->
-
-
-
 ## Rules
 
-<!-- begin auto-generated rules list -->
-TODO: Run eslint-doc-generator to generate the rules list.
-<!-- end auto-generated rules list -->
 
 

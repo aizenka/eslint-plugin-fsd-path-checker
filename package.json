@@ -1,6 +1,6 @@
 {
-  "name": "eslint-plugin-fsd-path-checker",
-  "version": "0.0.0",
+  "name": "eslint-plugin-feature-sliced-design-path-checker",
+  "version": "1.0.1",
   "description": "ESLint plugin for imports in FSD architecture",
   "keywords": [
     "eslint",
