@@ -3,11 +3,10 @@
 const rule = require("../../../lib/rules/path-checker"),
   RuleTester = require("eslint").RuleTester;
 
-// import { addCommentFormActions, addCommentFormReducer } from '@/entities/AddCommentForm/model/slice/addCommentFormSlice'
-
 const ruleTester = new RuleTester({
   parserOptions: { ecmaVersion: 6, sourceType: 'module' }
 });
+
 ruleTester.run('path-checker', rule, {
   valid: [
     {

@@ -34,7 +34,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "fsd-path-checker/rule-name": 2
+        "fsd-path-checker/rule-name": "error"
     }
 }
 ```
