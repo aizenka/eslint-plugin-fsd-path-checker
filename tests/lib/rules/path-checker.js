@@ -25,12 +25,12 @@ ruleTester.run('path-checker', rule, {
     {
       filename: 'C:\\Users\\asd\\Desktop\\f1\\f2\\src\\entities\\AddCommentForm',
       code: "import { addCommentFormActions, addCommentFormReducer } from 'entities/AddCommentForm/model/slice/addCommentFormSlice'",
-      errors: [{message: 'Within a slice, all paths must be relative'}],
+      errors: [{ messageId: 'incorrectPath'}],
     },
     {
       filename: 'C:\\Users\\asd\\Desktop\\f1\\f2\\src\\entities\\AddCommentForm',
       code: "import { addCommentFormActions, addCommentFormReducer } from '@/entities/AddCommentForm/model/slice/addCommentFormSlice'",
-      errors: [{ message: 'Within a slice, all paths must be relative' }],
+      errors: [{ messageId: 'incorrectPath' }],
       options: [
         {
           alias: '@'
