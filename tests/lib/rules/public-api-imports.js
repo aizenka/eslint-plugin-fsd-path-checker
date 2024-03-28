@@ -72,7 +72,7 @@ ruleTester.run('public-api-imports', rule, {
     // },
     // {
     //   filename: 'C:\\Users\\asd\\Desktop\\f1\\f2\\src\\entities\\story.stories.tsx',
-    //   code: "import { addCommentFormActions, addCommentFormReducer } from '@/entities/Article/testing'",
+    //   code: "import { addCommentFormActions, addCommentFormReducer } from '@/entities/Article/testing/asd'",
     //   errors: [{ messageId: 'incorrectPublicApiTestingPath' }],
     //   options: optionsWithFilesPatterns
     // }
