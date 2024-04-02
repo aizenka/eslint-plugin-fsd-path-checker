@@ -50,19 +50,22 @@ ruleTester.run('public-api-imports', rule, {
     {
       code: "import { addCommentFormActions, addCommentFormReducer } from '@/entities/AddCommentForm/model/slice/addCommentFormSlice'",
       errors: [{ messageId: 'incorrectPublicApiPath' }],
-      options
+      options,
+      output: "import { addCommentFormActions, addCommentFormReducer } from '@/entities/AddCommentForm'"
     },
+    // eslint-disable-next-line eslint-plugin/consistent-output
     {
       filename: 'C:\\Users\\asd\\Desktop\\f1\\f2\\src\\entities\\forbidden.ts',
       code: "import { addCommentFormActions, addCommentFormReducer } from '@/entities/Article/testing'",
       errors: [{ messageId: 'incorrectPublicApiTestingPath' }],
-      options: optionsWithFilesPatterns
+      options: optionsWithFilesPatterns,
     },
     {
       filename: 'C:\\Users\\asd\\Desktop\\f1\\f2\\src\\entities\\StoreDecorator.tsx',
       code: "import { addCommentFormActions, addCommentFormReducer } from '@/entities/Article/testing/file.tsx'",
       errors: [{ messageId: 'incorrectPublicApiPath' }],
-      options: optionsWithFilesPatterns
+      options: optionsWithFilesPatterns,
+      output: "import { addCommentFormActions, addCommentFormReducer } from '@/entities/Article'"
     },
     // {
     //   filename: 'C:\\Users\\asd\\Desktop\\f1\\f2\\src\\entities\\file.test.ts',
