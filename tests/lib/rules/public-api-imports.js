@@ -53,12 +53,12 @@ ruleTester.run('public-api-imports', rule, {
       options,
       output: "import { addCommentFormActions, addCommentFormReducer } from '@/entities/AddCommentForm'"
     },
-    // eslint-disable-next-line eslint-plugin/consistent-output
     {
       filename: 'C:\\Users\\asd\\Desktop\\f1\\f2\\src\\entities\\forbidden.ts',
       code: "import { addCommentFormActions, addCommentFormReducer } from '@/entities/Article/testing'",
       errors: [{ messageId: 'incorrectPublicApiTestingPath' }],
       options: optionsWithFilesPatterns,
+      output: null
     },
     {
       filename: 'C:\\Users\\asd\\Desktop\\f1\\f2\\src\\entities\\StoreDecorator.tsx',
